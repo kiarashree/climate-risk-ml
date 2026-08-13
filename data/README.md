@@ -1,16 +1,18 @@
 # Data
 
-This project uses four source datasets:
+This folder contains processed/model-ready datasets and representative samples used in the project.
 
-1. **Firm-Year Climate Scores** - annual firm-level climate disclosure signals.
-2. **Firm-Quarter Climate Scores** - quarterly climate disclosure signals used for feature engineering and aggregation.
-3. **Fama-French 3 Factors** - market, SMB, HML and risk-free rate factors.
-4. **Momentum Factor** - momentum factor data.
+## Included processed datasets
+- `clean_ff3.csv` — cleaned Fama-French factors.
+- `clean_momentum.csv` — cleaned momentum factor.
+- `clean_monthly_panel.csv` — model-ready monthly panel.
+- `clean_quarterly_panel.csv` — processed quarterly panel.
 
-## Expected Files
+## Sample datasets
+The complete firm-level datasets are substantially larger, so reproducible 1,000-row samples are provided:
+- `sample/clean_firmyear_sample.csv`
+- `sample/clean_firmquarter_sample.csv`
 
-```text
-firmyear_score_2024Q4_Version_2025_Jul_03.csv
-firmquarter_score_2024Q4_Version_2025_Jul_03.csv
-F-F_Research_Data_Factors.csv
-F-F_Momentum_Factor.csv
+Samples were drawn with `random_state=42`.
+
+The full raw/source datasets are not redistributed in this repository due to file-size and redistribution considerations.
