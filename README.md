@@ -47,6 +47,10 @@ The project also produced an important negative result: overall ranking performa
 
 That limitation became part of the analysis rather than something to hide.
 
+### Model Performance
+
+![Model Performance](results/model_performance.png)
+
 ## Explainability
 
 SHAP analysis was used to understand what drove model predictions.
@@ -54,6 +58,14 @@ SHAP analysis was used to understand what drove model predictions.
 Traditional market variables — including **risk-free rate, momentum, and SMB** — remained dominant, while climate-related variables contributed less but non-zero explanatory power.
 
 An ablation framework was also used to test whether climate features added incremental predictive value beyond conventional market factors.
+
+### SHAP Feature Importance
+
+![SHAP Feature Importance](results/shap_feature_importance.png)
+
+### Ablation Study
+
+![Ablation Study](results/ablation_study.png)
 
 ## Tech Stack
 
