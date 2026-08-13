@@ -1,6 +1,4 @@
 # Large / raw datasets
-data/*.csv
-data/*.xlsx
 data/*.parquet
 data/*.zip
 
